@@ -137,9 +137,9 @@ output "load_balancer_ip" {
 ```
 ### variables.tf – переменные
 
-hcl
+```hcl
 variable "yc_token" {
-  description = "OAuth-токен Яндекс.Облака"
+  description = "OAuth‑токен Яндекс.Облака"
   type        = string
   sensitive   = true
 }
@@ -156,7 +156,14 @@ variable "yc_folder_id" {
 
 variable "yc_zone" {
   description = "Зона доступности"
-```
   type        = string
   default     = "ru-central1-a"
 }
+
+variable "image_id" {
+  description = "ID образа Ubuntu 22.04 LTS"
+  type        = string
+  default     = "fd8ne5h1q2n76djsj68i"  # Ubuntu 22.04 LTS в ru-central1-a
+}
+```
+
