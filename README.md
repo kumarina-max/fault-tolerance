@@ -135,7 +135,8 @@ output "load_balancer_ip" {
   ]))
 }
 ```
-###variables.tf – переменные
+### variables.tf – переменные
+
 hcl
 variable "yc_token" {
   description = "OAuth-токен Яндекс.Облака"
